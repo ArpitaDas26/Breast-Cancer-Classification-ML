@@ -1,7 +1,7 @@
-** Breast Cancer Classification using Machine Learning **
+ Breast Cancer Classification using Machine Learning 
 
 Project Overview:
-This project focuses on building and comparing multiple Machine Learning models to classify breast cancer tumors as **Malignant (0)** or **Benign (1)** using the Breast Cancer dataset from sklearn.
+This project aims to develop and compare multiple machine learning classification models to predict whether a breast tumor is malignant or benign using structured medical features. The models are evaluated using standard performance metrics to identify the most effective classifier.
 
 The objective is to evaluate different classification algorithms and select the best-performing model based on performance metrics.
 
@@ -19,7 +19,7 @@ The dataset was split into training and testing sets using an 80-20 split.
 Preprocessing:
 - Train-Test Split
 - Feature Scaling using StandardScaler
-- Scaling was applied to normalize feature distributions
+- Feature scaling was performed using StandardScaler to ensure that all input features contribute equally to the model training process.
 
 
 Models Implemented:
@@ -49,7 +49,7 @@ Each model was evaluated using:
 
  Best Model:
 
-Based on overall performance comparison, Logistic Regression achieved the highest accuracy and AUC score.
+Based on comparative evaluation across all performance metrics, Logistic Regression demonstrated the most balanced and consistent performance, achieving the highest Accuracy and AUC score among the tested models.
 
 Test Accuracy: ~98%
 
@@ -59,7 +59,7 @@ Confusion Matrix:
 The model correctly classified the majority of malignant and benign cases with very high precision and recall.
 
 
-**Project Structure:
+Project Structure:
 Breast-Cancer-Classification-ML
 
 model_training.ipynb # Model training and comparison
@@ -77,14 +77,16 @@ A simple Streamlit app was created to-
 - Generate predictions using the saved model
 - Display classification results
 
-To run locally:
-streamlit run app.py
+To run the application locally:
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Run the Streamlit app:
+   streamlit run app.py
+
 
 Installation:
 Install dependencies using-
 pip install -r requirements.txt
 
 Conclusion:
-
-This project demonstrates the application of multiple machine learning classification models, performance comparison, model selection, and deployment using Streamlit.
-The final model achieves high classification accuracy and demonstrates strong predictive capability for breast cancer diagnosis.
+This study demonstrates the effectiveness of classical machine learning algorithms in medical classification tasks. The results indicate that Logistic Regression provides strong predictive performance for breast cancer diagnosis on this dataset. The deployment of the model using Streamlit further illustrates its practical usability in an interactive environment.
